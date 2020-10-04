@@ -1,2 +1,4 @@
 fastapi
 uvicorn
+pytube3
+aiofiles
