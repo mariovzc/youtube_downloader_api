@@ -19,7 +19,7 @@ def read_root():
     return {"status": "ok"}
 
 
-@app.post("/download")
+@app.post("/downloads")
 def download_file(url: str = Body(..., embed=True, alias="url")):
     if not valid_url(url):
         raise HTTPException(status_code=400, detail="invalid url")

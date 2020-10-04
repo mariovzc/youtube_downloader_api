@@ -2,3 +2,5 @@ fastapi
 uvicorn
 pytube3
 aiofiles
+requests
+pytest
