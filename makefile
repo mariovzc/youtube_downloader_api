@@ -23,7 +23,7 @@ build: clean
 			 docker build -t $(PACKAGE_NAME) .
 
 run: clean
-		 docker run $(PACKAGE_NAME)
+		 docker run -p $(HOST_PORT):8000 $(PACKAGE_NAME) 
 
 shell: clean-pyc
 			docker run -it --rm \

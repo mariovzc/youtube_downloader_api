@@ -14,5 +14,4 @@ WORKDIR /app-run
 COPY . /app-run
 
 EXPOSE 8000
-
-CMD uvicorn server:app --reload --port=8000 --host=0.0.0.0
+ENTRYPOINT ["uvicorn", "server:app", "--port=8000", "--host=0.0.0.0"]
